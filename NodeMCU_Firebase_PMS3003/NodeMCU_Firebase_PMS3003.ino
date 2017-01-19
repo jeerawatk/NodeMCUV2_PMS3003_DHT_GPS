@@ -48,8 +48,8 @@ String labels[12] {"Time: ", "Status: ", "Latitude: ", "Hemisphere: ", "Longitud
 #define FIREBASE_AUTH "ldAeVoMpj6myZC5pFcmxJrvU6rG6VJNWgxCMxod5"
 
 // Config connect WiFi
-#define WIFI_SSID "iam1"
-#define WIFI_PASSWORD "13243546"
+#define WIFI_SSID "SSID"
+#define WIFI_PASSWORD "PASS"
 
 // Config DHT
 #define DHTPIN D1
