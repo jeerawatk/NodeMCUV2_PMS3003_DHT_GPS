@@ -48,8 +48,8 @@ String labels[12] {"Time: ", "Status: ", "Latitude: ", "Hemisphere: ", "Longitud
 #define FIREBASE_AUTH "ldAeVoMpj6myZC5pFcmxJrvU6rG6VJNWgxCMxod5"
 
 // Config connect WiFi
-#define WIFI_SSID "SSID"
-#define WIFI_PASSWORD "PASS"
+#define WIFI_SSID "RbME"
+#define WIFI_PASSWORD "1234567890"
 
 // Config DHT
 #define DHTPIN D1
@@ -259,6 +259,10 @@ void loop() {
  
   // append a new value to /logDHT
   String name = Firebase.push("0001", root);
+  Firebase.setFloat("0001/lastpm25",temppm25 );
+  Firebase.setFloat("0001/lastpm10",temppm10 );
+
+  
   // handle error
   if (Firebase.failed()) {
     Serial.print("pushing /logs failed:");
@@ -276,7 +280,7 @@ void loop() {
   Serial.print("pushed: /0001/");
   Serial.println(name);
 
-  delay(5000);
+  delay(600000);
 }
 
 
