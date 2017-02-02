@@ -280,7 +280,7 @@ void loop() {
   Serial.print("pushed: /0001/");
   Serial.println(name);
 
-  delay(600000);
+  delay(2000);
 }
 
 
