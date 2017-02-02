@@ -80,7 +80,7 @@ $(document).ready(function(e) {
 	
 	firebase.initializeApp(config);
 		
-	var logDHT = firebase.database().ref().child("0001");
+	var logDHT = firebase.database().ref().("0001");
 		
 	logDHT.on("child_added", function(sanp) {
 		if (!newItems) return;
