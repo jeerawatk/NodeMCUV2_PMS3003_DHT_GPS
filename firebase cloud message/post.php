@@ -103,32 +103,32 @@ $(document).ready(function(e) {
 		$("#lastpm25 > .content").html(row.last25 + " ug/m3");
 	
 		//console.log(pm25);
-		if(pm25>=0&&pm25<=50) text25="Good";
-		else if(pm25>50&&pm25<101) text25="Moderate";
-		else if(pm25>100&&pm25<151) text25="Unhealthy for Sensitive";
-		else if(pm25>150&&pm25<201) text25="Unhealthy";
-		else if(pm25>200&&pm25<301) text25="Very Unhealthy";
-		else if(pm25>300&&pm25<501) text25="Hazardous";
-		console.log(text25);
+		
+		if(pm25>=0&&pm25<=15) window.location.href = "pm200.php?pm25=" + pm25;
+		else if(pm25>15&&pm25<41) window.location.href = "pm201.php?pm25=" + pm25;
+		else if(pm25>40&&pm25<66) window.location.href = "pm202.php?pm25=" + pm25;
+		else if(pm25>65&&pm25<151) window.location.href = "pm203.php?pm25=" + pm25;
+		else if(pm25>150&&pm25<251) window.location.href = "pm204.php?pm25=" + pm25;
+		else if(pm25>250&&pm25<501) window.location.href = "pm205.php?pm25=" + pm25;
+		
 
+		
 		//console.log(pm10);
-		if(pm10>=0&&pm10<=50) text10="Good";
-		else if(pm10>50&&pm10<101) text10="Moderate";
-		else if(pm10>100&&pm10<151) text10="Unhealthy for Sensitive";
-		else if(pm10>150&&pm10<201) text10="Unhealthy";
-		else if(pm10>200&&pm10<301) text10="Very Unhealthy";
-		else if(pm10>300&&pm10<501) text10="Hazardous";
-		console.log(text10);
-		//$("#pm25m > .content").html(row.pm25 + " ug/m3");
-		//$("#pm25mm > ").html(row.pm25*100 + " ug/m3")
-		//$("#pm25m > .content").html(if(row.pm25>20){row.pm25});
+		if(pm10>=0&&pm10<=50) window.location.href = "pm100.php?pm10=" + pm10; //set pm10 to post.php
+		else if(pm10>50&&pm10<101) window.location.href = "pm101.php?pm10=" + pm10; //set pm10 to post.php
+		else if(pm10>100&&pm10<151) window.location.href = "pm102.php?pm10=" + pm10;
+		else if(pm10>150&&pm10<201) window.location.href = "pm103.php?pm10=" + pm10;
+		else if(pm10>200&&pm10<301) window.location.href = "pm104.php?pm10=" + pm10;
+		else if(pm10>300&&pm10<501) window.location.href = "pm105.php?pm10=" + pm10;
+		
+		
+		
 		$("#gps > .content").html(row.lat + " , " + row.lng);
 		$("#humidity > .content").text(row.humidity + " %");
 		
 		$("#status").removeClass("danger").addClass("success");
 		$("#status > .content").text("ONLINE");
 
-		
 		setTimeoffline();
 	});
 	
@@ -168,7 +168,13 @@ var setTimeoffline = function() {
 		$("#status > .content").text("OFFLINE");
 	}, 2 * 60 * 1000);
 }
+
+
+
+
+
 </script>
+
 
 <style>
 .dialog {

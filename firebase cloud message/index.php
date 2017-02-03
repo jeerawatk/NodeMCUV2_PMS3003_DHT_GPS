@@ -102,33 +102,12 @@ $(document).ready(function(e) {
 		$("#lastpm10 > .content").html(row.last10 + " ug/m3");
 		$("#lastpm25 > .content").html(row.last25 + " ug/m3");
 	
-		//console.log(pm25);
-		if(pm25>=0&&pm25<=50) text25="Good";
-		else if(pm25>50&&pm25<101) text25="Moderate";
-		else if(pm25>100&&pm25<151) text25="Unhealthy for Sensitive";
-		else if(pm25>150&&pm25<201) text25="Unhealthy";
-		else if(pm25>200&&pm25<301) text25="Very Unhealthy";
-		else if(pm25>300&&pm25<501) text25="Hazardous";
-		console.log(text25);
-
-		//console.log(pm10);
-		if(pm10>=0&&pm10<=50) text10="Good";
-		else if(pm10>50&&pm10<101) text10="Moderate";
-		else if(pm10>100&&pm10<151) text10="Unhealthy for Sensitive";
-		else if(pm10>150&&pm10<201) text10="Unhealthy";
-		else if(pm10>200&&pm10<301) text10="Very Unhealthy";
-		else if(pm10>300&&pm10<501) text10="Hazardous";
-		console.log(text10);
-		//$("#pm25m > .content").html(row.pm25 + " ug/m3");
-		//$("#pm25mm > ").html(row.pm25*100 + " ug/m3")
-		//$("#pm25m > .content").html(if(row.pm25>20){row.pm25});
 		$("#gps > .content").html(row.lat + " , " + row.lng);
 		$("#humidity > .content").text(row.humidity + " %");
 		
 		$("#status").removeClass("danger").addClass("success");
 		$("#status > .content").text("ONLINE");
 
-		
 		setTimeoffline();
 	});
 	
@@ -168,7 +147,13 @@ var setTimeoffline = function() {
 		$("#status > .content").text("OFFLINE");
 	}, 2 * 60 * 1000);
 }
+
+
+
+
+
 </script>
+
 
 <style>
 .dialog {
