@@ -32,7 +32,7 @@ $msg = array
 
 $fields = array
 (
-	'to' 	=> '/topics/0001pm10',
+	'to' 	=> '/topics/0001pm25',
 	'data'			=> $msg
 );
  
