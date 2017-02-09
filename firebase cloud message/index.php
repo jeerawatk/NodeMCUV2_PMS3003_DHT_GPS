@@ -241,13 +241,13 @@ var setTimeoffline = function() {
 
         <div class="row">
         	<div class="col-sm-4">
-             <div class="dialog danger fadeIn animated" id="pm10">
+             <div class="dialog danger fadeIn animated" id="lastpm10">
                <div class="content">???</div>
                <div class="title">PM 10</div>
              </div>
            </div>
            <div class="col-sm-4">
-             <div class="dialog primary fadeIn animated" id="pm25">
+             <div class="dialog primary fadeIn animated" id="lastpm25">
                <div class="content">00.0 &deg;C</div>
                <div class="title">PM 2.5</div>
              </div>

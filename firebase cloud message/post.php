@@ -104,22 +104,22 @@ $(document).ready(function(e) {
 	
 		//console.log(pm25);
 		
-		//if(pm25>=0&&pm25<=15) window.location.href = "pm200.php?pm25=" + pm25;
-		//if(pm25>15&&pm25<41) window.location.href = "pm201.php?pm25=" + pm25;
-		if(pm25>40&&pm25<66) window.location.href = "pm202.php?pm25=" + pm25;
-		else if(pm25>65&&pm25<151) window.location.href = "pm203.php?pm25=" + pm25;
-		else if(pm25>150&&pm25<251) window.location.href = "pm204.php?pm25=" + pm25;
-		else if(pm25>250&&pm25<501) window.location.href = "pm205.php?pm25=" + pm25;
+		//if(pm25>=0&&pm25<15) window.location.href = "pm200.php?pm25=" + pm25;
+		//if(pm25>14&&pm25<36) window.location.href = "pm201.php?pm25=" + pm25;
+		//if(pm25>35&&pm25<75) window.location.href = "pm202.php?pm25=" + pm25;
+		if(pm25>74&&pm25<116) window.location.href = "pm203.php?pm25=" + pm25;
+		else if(pm25>115&&pm25<150) window.location.href = "pm204.php?pm25=" + pm25;
+		else if(pm25>149&&pm25<500) window.location.href = "pm205.php?pm25=" + pm25;
 		
 
 		
 		//console.log(pm10);
 		//if(pm10>=0&&pm10<=50) window.location.href = "pm100.php?pm10=" + pm10; //set pm10 to post.php
 		//if(pm10>50&&pm10<101) window.location.href = "pm101.php?pm10=" + pm10; //set pm10 to post.php
-		if(pm10>100&&pm10<151) window.location.href = "pm102.php?pm10=" + pm10;
-		else if(pm10>150&&pm10<201) window.location.href = "pm103.php?pm10=" + pm10;
-		else if(pm10>200&&pm10<301) window.location.href = "pm104.php?pm10=" + pm10;
-		else if(pm10>300&&pm10<501) window.location.href = "pm105.php?pm10=" + pm10;
+		//if(pm10>100&&pm10<151) window.location.href = "pm102.php?pm10=" + pm10;
+		if(pm10>150&&pm10<250) window.location.href = "pm103.php?pm10=" + pm10;
+		else if(pm10>249&&pm10<350) window.location.href = "pm104.php?pm10=" + pm10;
+		else if(pm10>349&&pm10<501) window.location.href = "pm105.php?pm10=" + pm10;
 		
 		
 		
